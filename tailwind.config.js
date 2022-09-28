@@ -27,23 +27,21 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: 'Roboto, sans-serif'
+        sans: 'Lato, sans-serif',
+        lilita: 'Lilita One, cursive'
       },
       colors: {
-        primary: '#21E7B6',
-        secondary: '#212948',
-        accent: '#0D101D',
-        gray: {
-          500: '#CBC8C8',
-          700: '#999991'
+        primary: '#F43127',
+        secondary: '#F59A1B',
+        white: '#FAE4D0',
+        bgWhite: '#FAF3F2',
+        black: {},
+        text: {
+          90: 'rgba(29, 6, 5, 0.9)',
+          69: 'rgba(29, 6, 5, 0.69)',
+          500: '#635352',
+          700: '#34201F'
         }
-      },
-      backgroundImage: {
-        'gradient-1': 'linear-gradient(180deg, #000006 0%, #212948 100%)',
-        'gradient-2':
-          'linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(33, 41, 72, 0.71) 0.01%, rgba(33, 41, 72, 0.5) 37.5%, #212948 72.4%)',
-        'gradient-3':
-          'linear-gradient(180deg, #3B4571 0%, #212948 84.37%, #000000 99.48%)'
       },
       borderRadius: {
         10: '10px'
