@@ -1,47 +1,41 @@
-// import { render, screen } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 
-// import { Button } from '.'
+import { Button } from '.'
 
-// const { getByRole } = screen
+const { getByRole } = screen
 
-// describe('<Button />', () => {
-//   it('should render by default', () => {
-//     render(<Button>Children</Button>)
+describe('<Button />', () => {
+  it('should render by primary button', () => {
+    render(<Button variant="primary">Children</Button>)
 
-//     const component = getByRole('button', { name: 'Children' })
+    const component = getByRole('button', { name: 'Children' })
 
-//     expect(component).toHaveClass('py-4 w-[21.5rem] text-lg h-[3.625rem]')
-//   })
+    expect(component).toHaveClass(
+      'bg-primary text-white-900 px-5 py-[0.625rem] font-bold'
+    )
+  })
 
-//   it('should render with custom class', () => {
-//     render(<Button className="uppercase">Children</Button>)
+  it('should render by secondary button', () => {
+    render(<Button variant="secondary">Children</Button>)
 
-//     const component = getByRole('button', { name: 'Children' })
+    const component = getByRole('button', { name: 'Children' })
 
-//     expect(component).toHaveClass(
-//       'py-4 w-[21.5rem] text-lg h-[3.625rem] uppercase',
-//     )
-//   })
+    expect(component).toHaveClass(
+      'bg-white-500 text-primary px-4 py-2 font-black'
+    )
+  })
 
-//   it('should render with correct sizes', () => {
-//     const { rerender } = render(<Button size="small">Children</Button>)
+  it('should render with custom class', () => {
+    render(<Button className="uppercase">Children</Button>)
 
-//     const component = getByRole('button', { name: 'Children' })
+    const component = getByRole('button', { name: 'Children' })
 
-//     expect(component).toHaveClass('w-[16.188rem] text-2xl h-[2.875rem]')
+    expect(component).toHaveClass('uppercase')
+  })
 
-//     rerender(<Button size="medium">Children</Button>)
+  it('should match snapshot', () => {
+    const { container } = render(<Button>Children</Button>)
 
-//     expect(component).toHaveClass('py-4 w-[21.5rem] text-lg h-[3.625rem]')
-
-//     rerender(<Button size="large">Children</Button>)
-
-//     expect(component).toHaveClass('py-3 w-[22.188rem] text-lg h-[2.813rem]')
-//   })
-
-//   it('should match snapshot', () => {
-//     const { container } = render(<Button>Children</Button>)
-
-//     expect(container).toMatchSnapshot()
-//   })
-// })
+    expect(container).toMatchSnapshot()
+  })
+})

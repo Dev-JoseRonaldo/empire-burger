@@ -15,13 +15,15 @@ export default {
 
 const Template: ComponentStory<typeof Button> = args => <Button {...args} />
 
-export const Default = Template.bind({})
-Default.args = {
-  children: 'Button'
+export const primary = Template.bind({})
+primary.args = {
+  variant: 'primary',
+  children: 'Comprar Agora'
 }
 
-export const CustomClass = Template.bind({})
-CustomClass.args = {
-  children: 'Button',
+export const secondary = Template.bind({})
+secondary.args = {
+  variant: 'secondary',
+  children: 'Solicitar Pedido',
   className: 'uppercase'
 }
