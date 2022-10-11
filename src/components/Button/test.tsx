@@ -11,7 +11,7 @@ describe('<Button />', () => {
     const component = getByRole('button', { name: 'Children' })
 
     expect(component).toHaveClass(
-      'bg-primary text-white-900 px-5 py-[0.625rem] font-bold'
+      'bg-primary text-white-900 px-5 py-[0.625rem]'
     )
   })
 
@@ -21,7 +21,7 @@ describe('<Button />', () => {
     const component = getByRole('button', { name: 'Children' })
 
     expect(component).toHaveClass(
-      'bg-white-500 text-primary px-4 py-2 font-black'
+      'bg-white-500 text-primary px-4 py-2'
     )
   })
 
