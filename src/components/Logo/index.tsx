@@ -3,7 +3,7 @@ export interface LogoProps {
   color: 'dark' | 'light'
 }
 
-export const Logo = ({ width = 265, color }: LogoProps) => {
+export const Logo = ({ width = 230, color }: LogoProps) => {
   return (
     <svg
       width={width}

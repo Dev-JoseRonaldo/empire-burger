@@ -1,8 +1,16 @@
-import type { NextPage } from 'next'
-import { HomeLayout } from '../layout/Home'
+import { GetStaticProps } from 'next'
+import { menuMock } from '../components/Header/mock'
 
-const Home: NextPage = () => {
-  return <HomeLayout />
+import { MainLayout, MainLayoutProps } from '../layout/Home'
+
+export default function Main(props: MainLayoutProps) {
+  return <MainLayout {...props} />
 }
 
-export default Home
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {
+      menu: menuMock
+    }
+  }
+}
