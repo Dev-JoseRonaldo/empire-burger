@@ -8,6 +8,7 @@ export const headerContainer = `
   before:transition-all
   before:duration-500
   before:ease-in-out
+  before:z-50
 `
 export const navBarStyle = `
   px-4
@@ -33,11 +34,11 @@ export const navBarLiStyle = `hover:text-gray-700 hover:font-bold hover:transiti
 
 export const navBarMenuMobuleButtonStyle = `fixed right-4`
 
-export const navBarMenuMobuleIconStyle = `lg:hidden text-6xl text-[#3B200B]`
+export const navBarMenuMobuleIconStyle = `lg:hidden text-6xl text-gray-800`
 
 export const navBarMenuMobuleTransitionContextStyle = `fixed w-full inset-x-0 top-[4rem]`
 
-export const navBarMenuMobuleItemsStyle = `flex flex-col bg-[#3B200B] lg:hidden fixed text-white-900 w-full`
+export const navBarMenuMobuleItemsStyle = `flex flex-col bg-gray-800 lg:hidden fixed text-white-900 w-full`
 
 export const contactIconsBox = `flex items-center gap-[1.125rem]`
 
