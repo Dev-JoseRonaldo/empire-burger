@@ -18,14 +18,13 @@ module.exports = {
       '4xl': ['2rem', { lineHeight: '2.5rem' }],
       '5xl': ['2.375rem', { lineHeight: '2.5rem' }],
       '6xl': ['2.5rem', { lineHeight: '3rem' }],
-      '7xl': [
-        '3rem',
-        {
-          lineHeight: '3.5rem'
-        }
-      ]
+      '7xl': ['3.375rem', { lineHeight: '3.5rem' }],
+      '8xl': ['4.875rem', { lineHeight: '4rem' }]
     },
     extend: {
+      screens: {
+        xs: '380px'
+      },
       fontFamily: {
         sans: 'Lato, sans-serif',
         lilita: 'Lilita One, cursive'
@@ -39,11 +38,16 @@ module.exports = {
           500: '#FAE4D0'
         },
         gray: {
-          90: 'rgba(29, 6, 5, 0.9)',
-          69: 'rgba(29, 6, 5, 0.69)',
           500: '#635352',
-          700: '#34201F'
+          700: '#34201F',
+          800: '#3B200B',
+          900: 'rgba(29, 6, 5)'
         }
+      },
+      backgroundImage: {
+        home: 'url(https://res.cloudinary.com/devjoseronaldo/image/upload/v1665418056/empireburguer/banner-hero_pjiomj.png)',
+        homeMobile:
+          'url(https://res.cloudinary.com/devjoseronaldo/image/upload/v1665544040/empireburguer/Banner_hero_mobile_1_rjpenh.png)'
       },
       borderRadius: {
         10: '10px'
