@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Promotion /> Should match snapshot 1`] = `
+<div>
+  <section
+    class="flex flex-col justify-center items-start max-w-[1200px] mx-auto px-4 pt-[131px]"
+  >
+    <div>
+      <h1
+        class="font-lilita text-4xl uppercase text-gray-900/[0.9]"
+      >
+        Ofertas Especiais
+      </h1>
+      <p
+        class="text-base text-gray-900/[0.69] mb-4"
+      >
+        Aproveite todas as nossas ofertas, fiquem de olhos abertos, porque sempre estamos mudando o nosso cardapio.
+      </p>
+    </div>
+    <div
+      class="grid grid-cols-1 gap-2 md:grid-cols-3 md:grid-rows-2 sm:gap-4 lg:gap-[30px]"
+    >
+      <div
+        class="relative md:col-span-2 md:row-span-2 w-full h-full"
+      >
+        <h3
+          class="absolute top-3 left-4 text-white-900/[0.9] font-lilita text-2xl"
+        >
+          BURGUER IMPERIAL+BATATA
+           
+          <span
+            class="absolute top-7 left-0 text-white-900/[0.69] font-sans text-lg"
+          >
+            250kg
+          </span>
+        </h3>
+        <h3
+          class="absolute bottom-14 right-10 text-2xl text-white-900/[0.69]"
+        >
+          Apenas
+           
+          <span
+            class="absolute top-6 left-0 text-6xl font-lilita text-white-900 uppercase"
+          >
+            Hoje
+          </span>
+        </h3>
+        <img
+          alt="promoção1"
+          class="w-full h-full"
+          src="https://res.cloudinary.com/devjoseronaldo/image/upload/v1665418038/empireburguer/oferta-1_z2zzzs.png"
+        />
+      </div>
+      <div
+        class="relative w-full h-full md:col-span-1 md:row-span-1"
+      >
+        <h3
+          class="absolute top-3 left-4 text-gray-900/[0.9] font-lilita text-xl"
+        >
+          BATATA
+           
+          <span
+            class="absolute top-5 left-0 text-gray-900/[0.69] font-sans text-lg"
+          >
+            150kg
+          </span>
+        </h3>
+        <img
+          alt="promoção2"
+          class="w-full h-full"
+          src="https://res.cloudinary.com/devjoseronaldo/image/upload/v1665418037/empireburguer/oferta-2_lyil4c.png"
+        />
+      </div>
+      <div
+        class="relative w-full h-full md:col-span-1 md:row-span-1"
+      >
+        <h3
+          class="absolute top-3 left-4 text-gray-900/[0.9] font-lilita text-xl"
+        >
+          SORVETE
+           
+          <span
+            class="absolute top-5 left-0 text-gray-900/[0.69] font-sans text-lg"
+          >
+            50kg
+          </span>
+        </h3>
+        <img
+          alt="promoção3"
+          class="w-full h-full"
+          src="https://res.cloudinary.com/devjoseronaldo/image/upload/v1665418038/empireburguer/oferta-3_medudo.png"
+        />
+      </div>
+    </div>
+  </section>
+</div>
+`;

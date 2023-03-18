@@ -1,5 +1,5 @@
 export const buttonClasses =
-'flex items-center justify-center rounded-10 font-sans transition transition-color font-bold'
+'flex items-center justify-center rounded font-sans transition transition-color font-bold'
 
 export const ButtonVariant = {
   primary: 'bg-primary text-white-900 px-5 py-[0.625rem]',

@@ -1,9 +1,18 @@
-export const HomeLayout = () => {
+import { Header } from '../../components/Header'
+import { Home } from '../../components/Home'
+import { MenuProps } from '../../components/Header/templates/menuTemplate'
+import { Promotion } from '../../components/Promotion'
+
+export interface MainLayoutProps {
+  menu: MenuProps[]
+}
+
+export const MainLayout = ({ menu }: MainLayoutProps) => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center bg-black text-white py-2">
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-6xl font-lilita font-bold">Hello World</h1>
-      </main>
-    </div>
+    <main className="w-full">
+      <Header menu={menu} />
+      <Home />
+      <Promotion />
+    </main>
   )
 }
